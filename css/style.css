@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+table{
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: collapse;/*quitar línea entre celdas, solo sirve en la etiqueta tabla*/
+    margin: 0 auto;
+}
+table, td{/*se aplica a todos los selectores*/
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid #7E4333;
+}
+table tr td{
+    background-color: azure;/*Los espacios entre selesctores, quiere decir que adentro de lo que este más a la derecha, cerca de los selectores*/
+    
+}
+div > h1{/* > se aplica cuando es hijo directo*/
+    font-style: italic;
+}
+/*#contenido-principal{
+    max-width: 600px;/*Ancho máximo y hace que cuando se achique la página el contenido tambien lo haga*/
+    /*margin-left: auto;Ocupa el espacio disponible y lo pone como margen*/
+    /*margin-right: auto;Ocupa el espacio disponible y lo pone como margen*/
+    /*Termina centrando la caja*/
+    /*margin:0 auto; arriba y abajo 0 y izquierda y derecha auto y asi centra la caja
+}*/
+body{
+    background-color: #f3e5d8;
+}
+main{
+    max-width: 900px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.receta:hover{
+    background-color:aliceblue;
+}
+.initial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #255538;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+.inicial{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+
+}
+.inicial li:hover{
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+.head{
+    max-width: 870px;/*Funciona para margin:0 auto;*/
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1rem;
+
+    background-image: url(/images/WhatsApp\ Image\ 2024-07-11\ at\ 9.41.37\ AM.jpeg);
+}
+.menu{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-style: oblique;
+    margin: 0.5rem auto;
+    list-style-type: none;
+   
+    
+    /*gap:15px; espacio entre items*/
+    
+}
+.content_menu{
+    max-width: 870px;
+    border: 0.1rem solid black;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+h1{
+    font-family: "DM Serif Display";
+}
+h2{
+    /*text-align: center;*/
+    color: #7E4333;
+    margin: 0 auto;
+    font-family: "DM Sans";
+}
+.receta{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+h2{
+    margin-top: 1.5rem;
+}
+.estilo_nav{
+    background-color: #255538;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+}
+li, td, p{
+    font-family: "DM Sans";
+}
+.estilo_nav, h3, .inicial{
+   color:aliceblue;
+}

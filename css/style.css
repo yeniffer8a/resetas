@@ -77,18 +77,19 @@ main{
     
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: center;
     align-items: center;
     font-weight: bolder;
     font-size: 1.5rem;
     font-style: oblique;
     margin: 0.5rem auto;
     list-style-type: none;
-   
+    gap:15px; /*espacio entre items*/
     
-    /*gap:15px; espacio entre items*/
     
 }
+
 .content_menu{
     max-width: 870px;
     border: 0.1rem solid black;
@@ -117,6 +118,7 @@ h2{
     background-color: #255538;
     border-radius: 1rem;
     padding: 0.5rem;
+    
 
 }
 li, td, p{
@@ -124,4 +126,36 @@ li, td, p{
 }
 .estilo_nav, h3, .inicial{
    color:aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+    .head{
+        display: none;
+    }
+
+    .menu{
+        flex-direction: column;
+        padding: 0;
+        
+
+        
+    }
+    .menu .estilo_nav{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 0;
+        
+    }
+    .receta .sub-title{
+        font-size: 3rem;
+    }
+    table tr td:nth-of-type(2){
+        text-align: right;
+    }
+    .inicial {
+        display: none;
+    }
+
+
 }
